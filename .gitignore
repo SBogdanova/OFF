@@ -20,3 +20,19 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+import java.util.Scanner.
+class squareOfStars{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        int size = Integer.parseInt(scan.nextLine());
+        char star = '*';
+        String horizontal = new String(new char[size]).replace("\0", star + "");
+        String vertical = star + new String(new char[size - 2]).replace("\0", " ") + star;
+        vertical = new String(new char[size - 2]).replace("\0", vertical + "\n");                                    
+       System.out.println(horizontal);
+       System.out.print(vertical);
+       System.out.println(horizontal);                                     
+                                          
+    }                                      
+}
+    
